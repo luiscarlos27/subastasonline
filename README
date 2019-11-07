@@ -1,0 +1,47 @@
+
+
+Pasos para desarrollar la aplicacion de subastas
+
+
+1. 	Descargar Node en su version mas reciente. Luego
+
+		npm i -g express express-generator
+
+2.	Luego de descargar express es necesario ejecutar el siguiente comando
+
+		express --view=hbs
+
+	El anterior comando lo utilizamos para generar las carpetas base de proyecto.
+
+3. 	Descargar las dependencias
+	
+		npm install
+
+4. 	Luego verificar el funcionamiento de la pagina principal
+		
+		npm start
+
+	Este comando nos sirve para levantar el servidor con nodejs en el localhost: localhost: 3000
+
+5. 	Estructura del la aplicacion
+
+	app.js	- Es donde se declaran e invocan los controladores
+
+	bin/www  - Es donde se define el puerto y se levanta el proyecto
+
+	node_modules - dependencias descargadas para el funcionamiento de la aplicacion
+
+	public/  - carpeta publica para cargar imagenes o css
+
+	routes/  - rutas direccionamiento de las diferentes paginas
+
+6. 	Instalar dependencias para 
+
+		npm install body-parser express mysql request
+
+7.	// Bootstrap 4 y librerías necesarias en el archivo app.js
+		app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
+		app.use('/js', express.static(__dirname + '/node_modules/jquery/dist'));
+		app.use('/js', express.static(__dirname + '/node_modules/popper.js/dist'));
+		app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js'));
+
