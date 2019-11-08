@@ -35,11 +35,16 @@ Pasos para desarrollar la aplicacion de subastas
 
 	routes/  - rutas direccionamiento de las diferentes paginas
 
-6. 	Instalar dependencias para 
+6. 	Instalar dependencias para backend
 
 		npm install body-parser express mysql request
 
-7.	// Bootstrap 4 y librerías necesarias en el archivo app.js
+7.	Instalar dependencias frontend
+		
+		npm install bootstrap jquery 
+
+
+8.	// Bootstrap 4 y librerías necesarias en el archivo app.js
 		app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 		app.use('/js', express.static(__dirname + '/node_modules/jquery/dist'));
 		app.use('/js', express.static(__dirname + '/node_modules/popper.js/dist'));
