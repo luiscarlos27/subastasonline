@@ -2,4 +2,3 @@
 const pool = require('../config/config');
 
 // lista functions
-

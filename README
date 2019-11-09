@@ -50,3 +50,9 @@ Pasos para desarrollar la aplicacion de subastas
 		app.use('/js', express.static(__dirname + '/node_modules/popper.js/dist'));
 		app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js'));
 
+9. 	Instalar controlador para mysql
+
+		npm install mysql
+
+
+
